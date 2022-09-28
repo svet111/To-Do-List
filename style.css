@@ -1,0 +1,82 @@
+@font-face {
+    font-family: JosefinSans;
+    font-weight: 700;
+    src: url(fonts/JosefinSans-Bold.ttf);
+}
+
+* {
+    font-family: JosefinSans, sans-serif;
+    color: rgba(0,0,0,.8);
+    line-height: 1.2;
+    letter-spacing: -.5px;
+}
+
+body {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+section {
+    align-items: center;
+    background: rgb(250,250,250);
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 80%;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+ul,
+#input-container {
+    display: flex;
+    max-width: 500px;
+    width: 80%;
+}
+
+ul {
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+    width: 100%;
+}
+
+#add-task-button,
+.delete-btn {
+    border: none;
+    background: rgba(150,150,250,.2);
+    margin: 0;
+    padding: 10px 20px;
+}
+
+#add-task-button:hover,
+.delete-btn:hover {
+    background: rgba(150,150,250,.4);
+}
+
+#input-container {
+    justify-content: space-between;
+}
+
+#input-container input {
+    width: 100%;
+    border: none;
+    padding: 20px;
+}
+
+input[type="text"] {
+    font-size: 1.3em;
+}
+
+input[type="checkbox"]:checked ~ span {
+    text-decoration: line-through;
+}
